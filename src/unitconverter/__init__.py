@@ -1,4 +1,4 @@
-# src/__init__.py
+# src/converter/__init__.py
 
 """Do various unit conversions.
 

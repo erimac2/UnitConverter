@@ -6,14 +6,16 @@ Its aim is to provide you with a simple solution for converting various units.
 ## Table Of Contents
 
 
-Documentation consists of four separate parts:
-
-1. [Getting Started](getting_started.md)
-2. [Reference](reference.md)
+Documentation consists of four separate parts:  
+1. [About](about.md)  
+2. [Getting Started](getting_started.md)  
+3. [Reference](reference.md)  
+4. [Patch History](patch_history.md)  
+5. [License](license.md)
 
 Quickly find what you're looking for depending on
 your use case by looking at the different pages.
 
 ## Project Overview
 
-::: src
+::: src.unitconverter

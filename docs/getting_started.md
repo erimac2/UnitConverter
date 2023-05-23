@@ -1,40 +1,36 @@
-This part of the project documentation focuses on a
-**problem-oriented** approach. You'll tackle common
-tasks that you might have, with the help of the code
-provided in this project.
-
 ## How To Convert Units?
 
-You have two numbers and you need to add them together.
-You're in luck! The `calculator` package can help you
-get this done.
+The `converter` Python package helps you perform various unit conversions.
 
-Download the code from this GitHub repository and place
-the `calculator/` folder in the same directory as your
-Python script:
+Before using the package, you need to install it on your system. You can do it by using pip:
 
-    your_project/
-    │
-    ├── unit/
-    │   ├── __init__.py
-    │   └── calculations.py
-    │
-    └── your_script.py
+    pip install python-unitconverterermac
 
-Inside of `your_script.py` you can now import the
-`add()` function from the `calculator.calculations`
-module:
+Inside of your python script you can now import the
+converter from the `unitconverter`
+package:
 
     # your_script.py
-    from calculator.calculations import add
+    from unitconverter import converter
 
-After you've imported the function, you can use it
-to add any two numbers that you need to add:
+After you've imported the package, you can use it
+to perform various unit conversions:
 
     # your_script.py
-    from calculator.calculations import add
+    from unitconverter import converter
 
-    print(add(20, 22))  # OUTPUT: 42.0
+    print(converter.convertLength(20, "m", "cm"))  # OUTPUT: 200.0
+    print(converter.convertWeight(5, "kilogram", "g")) # OUTPUT: 5000.0
 
-You're now able to add any two numbers, and you'll
-always get a `float` as a result.
+You can also import conversion functions for specific units:
+    # your_script.py
+    from unitconverter.converter import convertLength
+
+You can then call the specific function to convert units:
+    # your_script.py
+    from unitconverter.converter import convertLength
+
+    print(convertLength(5, "meter", "centimeter")) # OUTPUT: 500.0
+
+
+Modules available for conversion include: `convertLength`, `convertWeight`, `convertVolume`, `convertPressure`, `convertEnergy`, `convertData`, `convertSpeed`, `convertTime`, `convertTemperature`

@@ -113,6 +113,8 @@ def convertWeight(value: Union[float, int], input_unit: Union[str, chr], output_
         "dg" : "decigram",
         "gram" : "gram",
         "g" : "gram",
+        "kilogram" : "kilogram",
+        "kg" : "kilogram",
         "decagram" : "decagram",
         "dag" : "decagram",
         "hectogram" : "hectogram",
@@ -512,3 +514,5 @@ def convertTemperature(value: Union[float, int], input_unit: Union[str, chr], ou
     else:
         raise ValueError("Invalid conversion units. Supported units are 'C' (Celsius), 'F' (Fahrenheit) and 'K' (Kelvin).")
     
+
+print(convertPressure(5, "psi", "bar"))

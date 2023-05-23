@@ -8,5 +8,8 @@ plugins:
 
 nav:
   - index.md
+  - About: about.md
   - Getting Started: getting_started.md
   - Reference: reference.md
+  - Patch History: patch_history.md
+  - License: license.md
